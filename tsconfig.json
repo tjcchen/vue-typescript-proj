@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "es5", "es2015"],
+    "target": "es5",
+    // Setting "module": "es2015" would make the code tree-shakeable by producing ESM
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    // Since Vue types doesn't use ES2015 default exports, this setting must be set to by-pass that. 
+    "allowSyntheticDefaultImports": true
+  }
+}
