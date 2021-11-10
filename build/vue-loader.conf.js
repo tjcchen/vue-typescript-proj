@@ -11,6 +11,8 @@ module.exports = {
     sourceMap: sourceMapEnabled,
     extract: isProduction
   }),
+  // This config will tell vue-loader to use ES instead of CJS (CommonJS) modules, as describe in vue-loader docs
+  esModule: true,
   cssSourceMap: sourceMapEnabled,
   cacheBusting: config.dev.cacheBusting,
   transformToRequire: {
